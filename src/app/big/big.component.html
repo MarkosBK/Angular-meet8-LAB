@@ -1,0 +1,11 @@
+<div class="container mx-auto d-flex justify-content-around">
+  <button *ngFor="let item of this.bigs" class="btn btn-dark"
+    (click)="showChanges($event.target.textContent)">{{item.Name}}</button>
+</div>
+<hr>
+<div class="card mx-auto" style="width: 24rem;">
+  <img [src]="SelectedCard.Photo" class="card-img-top" alt="img">
+  <div class="card-body">
+    <p class="card-text">{{SelectedCard.Description}}</p>
+  </div>
+</div>
